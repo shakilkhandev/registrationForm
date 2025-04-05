@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://images.seeklogo.com/logo-png/39/1/ict-division-logo-png_seeklogo-391017.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerSection">
+            <div class="topLogo"> <img width="120px" height="90px"
+                    src="https://images.seeklogo.com/logo-png/39/1/ict-division-logo-png_seeklogo-391017.png"
+                    alt="ICT divison BD logo"></div>
+            <div class="topCenterLogo"><img width="200px" height="90px"
+                    src="https://seeklogo.com/images/S/seip-skills-for-employment-investment-program-logo-57AF59698D-seeklogo.com.png"
+                    alt="SEIP  BD logo"></div>
+            <div class="topRightLogo"><img width="100px" height="90px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Government_of_Bangladesh_Logo_%28unofficial_and_fictional_logo%29.png"
+                    alt="BD MAP logo"></div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navList">
+            <li> <a href="#">Home</a> </li>
+            <li><a href="#">Course Module - 2025</a></li>
+            <li><a href="#">Class Schedule</a></li>
+            <li><a href="#">Success Story</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">e-Services</a></li>
+
+            <!-- <li> 
+            <label for="selectweek"> Attendance </label>
+            <select name="week" id="selectweek" value="w7">
+               <option value="week1">week1</option>
+            </select>
+        </li> -->
+
+
+
+        </ul>
+        <div class="notice">
+            <h4>Notice : </h4>
+            <p class="noticeLine"> এতদ্বারা সকলের অবগতির জন্য জানানো যাচ্ছে যে, আইসিটি বিভাগ ও আওতাধীন দপ্তর/সংস্থার
+                কার্যক্রম সম্পর্কে কোন অভিযোগ বা পরামর্শ থাকলে ই-মেইল এবং এ বিভাগের Facebook-এ Inbox করার জন্য অনুরোধ
+                করা হলো। </p>
+        </div>
+    </nav>
+    <br>
+
+    <hr>
+
+
+    <div class="formtitle">
+        <h1>Student Registration Form</h1>
+        <h2>Please Enter Required Information</h2>
+        <h4>Must Fill the * Marked Field</h4>
+    </div>
+
+    <div class="studentRegistration">
+
+
+
+        <form action="#">
+
+            <div class="formContainer">
+                <div class="districtBox">
+                    <label for="districtInput">District (Institute's Location:)*</label>
+                    <select name="district" id="districtInput" required class="selectBox">
+                        <option value="" disabled selected>--Select District--</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Barisal">Barisal</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                    </select>
+                </div>
+
+                <div class="courseBox">
+                    <label for="courseInput">Course Name (Institute's Course)*</label>
+                    <select name="course" id="courseInput" required class="selectBox">
+                        <option value="" disabled selected>--Select Course--</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                    </select>
+                </div>
+
+                <div class="nameBox infoBox">
+                    <label for="nameInput">Name (As per NID/Passport)*</label>
+                    <input type="text" id="nameInput" name="name" required placeholder="enter your name"
+                        class="inputField">
+                </div>
+
+                <div class="nameBox">
+                    <label for="fatherNameInput">Father's Name (As per NID/Passport)*</label>
+                    <input type="text" id="fatherNameInput" name="fatherName" required
+                        placeholder="enter your father's name" class="inputField">
+                </div>
+
+                <div class="nameBox">
+
+                    <label for="motherNameInput">Mother's Name </label>
+                    <input type="text" id="motherNameInput" name="motherName" placeholder="enter your mother's name"
+                        class="inputField">
+
+
+                </div>
+                <div class="nameBox">
+                    <label for="nidInput">NID/Passport Number (As per NID/Passport)*</label>
+                    <input type="text" id="nidInput" name="nid" required placeholder="enter your NID/Passport number"
+                        class="inputField">
+                </div>
+
+                <div class="nameBox">
+                    <label for="dobInput">Date of Birth (As per NID/Passport)*</label>
+                    <input type="date" id="dobInput" name="dob" required class="inputField">
+
+                </div>
+
+
+
+                <div class="identificationBox nameBox">
+
+                    <label for="identificationType">Identification Type*</label>
+
+                    <select name="identificationType" id="identificationType" required class="selectBox">
+                        <option value="" disabled selected>--Select Identification Type--</option>
+                        <option value="NID">NID</option>
+                        <option value="Passport">Passport</option>
+                        <option value="Birth Certificate">Birth Certificate</option>
+                        <option value="Driving License">Driving License</option>
+                        <option value="Student ID">Student ID</option>
+
+                    </select>
+                </div>
+
+                <div class="identificationBox nameBox">
+                    <label for="identificationNumber">Identification Number*</label>
+                    <input type="text" id="identificationNumber" name="identificationNumber" required
+                        placeholder="enter your identification number" class="inputField">
+                </div>
+
+
+                <div class="nameBox">
+                    <label for="emailInput">Email Address*</label>
+                    <input type="email" id="emailInput" name="email" required placeholder="enter your email address"
+                        class="inputField">
+                </div>
+
+                <div class="nameBox">
+                    <label for="phoneInput">Phone Number*</label>
+                    <input type="tel" id="phoneInput" name="phone" required placeholder="enter your phone number"
+                        class="inputField">
+                 </div>
+
+                 <div class="buttonBox">
+                    <button type="submit" class="Button" >Submit</button>
+                </div>
+                   
+
+            </div>
+
+
+            
+           
+
+
+
+          
+    </div>
+
+
+
+
+
+   
+    </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

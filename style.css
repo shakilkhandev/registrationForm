@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    /* background-color: white; */
+}
+img {
+    display: block;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 50px;
+}
+
+.headerSection{
+    /* height: 96px; */
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    border-radius: 4px;
+    border: 2px solid #e5d6d6;
+}
+
+
+.topRightLogo :nth-child(1) {
+    /* border-radius: 0px 4px 4px 0px; */
+    background-color: white;
+
+}
+.topLogo :nth-child(1) {
+    /* border-radius: 4px 0px 0px 4px; */
+}
+
+.navbar {
+    padding-left: 10px;
+    /* background-color: red; */
+}
+
+
+
+.navbar ul {
+    /* background-color: red; */
+    font-size: large;
+    list-style: none;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    gap: 15px;
+    justify-content:start;
+    align-items: center;
+
+}
+
+
+
+.navbar ul li a {
+    text-decoration: none;
+    /* background-color: red; */
+    background-color:rgb(236, 236, 236);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.notice{
+    background-color: red;
+    color: rgb(251, 251, 251);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: -2;
+}
+.notice h4{
+    background-color: rgb(7, 118, 37);
+    padding: 2px 15px;
+    letter-spacing: 2px;
+    animation: ease-in 1s alternate-reverse infinite;
+    animation-name: noticeAnimation;
+    z-index: 2;
+}
+
+@keyframes noticeAnimation {
+    0% { transform: translateX(-15%); }
+    100% { transform: translateX(0%); }
+
+}
+
+.notice p{
+
+    padding-left: 80%;
+    color: white;
+    letter-spacing: 2px;
+    /* background-color: rgba(235, 222, 198, 0.887); */
+
+    animation: noticeLineAnimation 20s  linear  infinite;
+    z-index: -1;
+    
+}
+
+@keyframes  noticeLineAnimation  {
+    0% {
+        transform: translateX(0%);
+        background-color: rgba(46, 15, 199, 0.669);
+    
+    }
+     50% {
+       background-color: rgb(12, 175, 66);
+    }
+
+    100% {
+        background-color: rgb(109, 8, 168);
+        transform: translateX(-100%);
+    }
+}
+
+.formtitle{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.formtitle h1{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 2px solid #e5d6d6;
+    padding: 5px 10px;
+}
+.studentRegistration{
+    display: flex;
+   justify-content: center;
+   width: 100%;
+   /* background-color: red; */
+}
+.formContainer{
+    padding: 20px;
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    align-content: center;
+   
+   
+}
+
+.districtBox , .courseBox , .nameBox  { 
+    display: flex;
+    flex-direction:column;
+    /* background-color: red; */
+    width: 600px;
+    padding: 10px;
+    font-size:18px;
+   
+}
+
+.selectBox , .inputField  {
+    width: 500px;
+    height: 30px;
+    
+    text-align: center;
+    background-color:whitesmoke;
+    border-radius: 4px;
+}
+
+
+.buttonBox{
+
+    display: flex;
+    flex-direction:column;
+    /* background-color: red; */
+    width: 600px;
+    padding: 10px;
+    font-size:18px;
+
+    
+
+
+
+}
+
+.Button{
+    width: 500px;
+    height: 40px;
+    color: white;
+    background-color: rgb(24, 167, 8);
+    border-radius: 4px;
+}
